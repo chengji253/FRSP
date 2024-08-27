@@ -48,7 +48,7 @@ Requirements
 
 - json, logging, colorlog, itertools, matplotlib, numpy, networkx
 
-Then, run the script directly.
+Run the script directly.
 ```bash
 python Simu_main.py
 ```
