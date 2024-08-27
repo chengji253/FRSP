@@ -41,8 +41,12 @@ This work contributes a lightweight, effective scheduling planner capable of mee
 
 ## 🛠️ Quick start
 
-You need to install gurobi first !
+
+Requirements
+- Gurobi
 [Install Gurobi Optimizer](https://support.gurobi.com/hc/en-us/articles/4534161999889-How-do-I-install-Gurobi-Optimizer)
+
+- json, logging, colorlog, itertools, matplotlib, numpy, networkx
 
 Then, run the script directly.
 ```bash
