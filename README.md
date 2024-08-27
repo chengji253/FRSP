@@ -1,5 +1,4 @@
 <div align="center">
-<h1> FRSP</h1>
 <h2>Flow Inspired Multi-Robot Real-Time Scheduling Planner</h2>
 </div>
 
@@ -11,7 +10,7 @@ Our experimental results show high computational efficiency, with an average cal
 We further validated the effectiveness of our scheme through real world flight tests involving ten quadrotors.
 This work contributes a lightweight, effective scheduling planner capable of meeting the real-time demands of multi-robot systems in obstacle-rich environments.
 
-<div align=center><img src="imgs/system.jpg" height=40% width=40% ></div>
+<div align=left><img src="imgs/system.jpg" height=40% width=40% ></div>
 
 
 ## 🛠️ Installation
