@@ -13,14 +13,14 @@ This work contributes a lightweight, effective scheduling planner capable of mee
 <div align=center><img src="imgs/system.jpg" height=40% width=40% ></div>
 
 ## Simulations
-### Forest maps
+### Forest maps num=500
 
 <p align="center">
   <img src="imgs/f1.gif" width = 30% height = 30%/>
   <img src="imgs/f5.gif" width = 30% height = 30%/>
 </p>
 
-### Maze maps
+### Maze maps num=500
 
 <p align="center">
   <img src="imgs/m1.gif" width = 30% height = 30%/>
@@ -38,10 +38,67 @@ This work contributes a lightweight, effective scheduling planner capable of mee
 
 ## 🛠️ Quick Start
 
-* [Install Gurobi Optimizer](https://support.gurobi.com/hc/en-us/articles/4534161999889-How-do-I-install-Gurobi-Optimizer)
+You need to install gurobi first !
+[Install Gurobi Optimizer]((https://support.gurobi.com/hc/en-us/articles/4534161999889-How-do-I-install-Gurobi-Optimizer))
 
-how to choose maps
+Then, run the script directly.
+```bash
+python Simu_main.py
+```
 
-how to choose number of drones
+In the file "Simu_main.py", the following function is the main entry.
+```python
+set_debug_mode(True)
+run_number_all_forest()
+run_number_all_maze()
+```
 
+You can modify "forest_name_list" and "num_list" to run the corresponding map and number of robots.
+
+```python
+def run_number_all_forest():
+    forest_name_list = ["f1"]
+    # forest_name_list = ["f1", "f2", "f3", "f4", "f5"]
+    num_list = [500]
+    # num_list = [50, 100, 150, 200, 250, 300, 350, 400, 450, 500]
+
+    # run forest map
+    for map_name in forest_name_list:
+        for swarm_num in num_list:
+            logging.info("map = " + map_name)
+            logging.info("swarm number=" + str(swarm_num))
+            run_flow_planner(map_name, swarm_num, True)
+
+
+def run_number_all_maze():
+    # maze_name_list = ["m5", "m3", "m4"]
+    maze_name_list = ["m1", "m2", "m3", "m4", "m5"]
+    num_list = [50]
+    # num_list = [30, 50, 80, 150, 200, 250, 300, 350, 400]
+
+
+    # run maze map
+    for map_name in maze_name_list:
+        for swarm_num in num_list:
+            logging.info("map = " + map_name)
+            logging.info("swarm number=" + str(swarm_num))
+            run_flow_planner(map_name, swarm_num, False)
+```
+
+In folders "\pic", we provide 5 forest maps and 5 maze maps. 
+We also provide a map editor, you can use "draw.io" to open and edit the map you want.
+
+<div align=center>
+<img src="imgs/forest.jpg" height=41% width=41% >
+<img src="imgs/maze.jpg" height=40% width=40% >
+</div>
+
+In function "def run_flow_planner(map_name, num, forest_bool):", you can get the effect of network construction by uncommenting line,
+```python
+# s1.mapInfo.draw_mapInfo()
+```
+<div align=center>
+<img src="imgs/cell.jpg" height=41% width=35% >
+<img src="imgs/net.jpg" height=40% width=40% >
+</div>
 
