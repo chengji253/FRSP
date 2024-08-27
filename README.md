@@ -1,5 +1,5 @@
 <div align="center">
-<h2>Flow Inspired Multi-Robot Real-Time Scheduling Planner</h2>
+<h2>🌊 Flow Inspired Multi-Robot Real-Time Scheduling Planner</h2>
 </div>
 
 ## 📜 Introduction
@@ -15,7 +15,7 @@ This work contributes a lightweight, effective scheduling planner capable of mee
 
 <div align=center><img src="imgs/system.jpg" height=40% width=40% ></div>
 
-## Simulations
+## 📍Simulations
 ### Forest maps num=500
 
 <p align="center">
@@ -31,7 +31,7 @@ This work contributes a lightweight, effective scheduling planner capable of mee
 </p>
 
 
-## Real world flight test
+## 🚀Real world flight test
 
 <p align="center">
   <img src="imgs/real55.gif" width = 60% height = 50%/>
@@ -109,7 +109,7 @@ In function "def run_flow_planner(map_name, num, forest_bool):", you can get the
 <img src="imgs/net.jpg" height=40% width=40% >
 </div>
 
-## Choice of collision avoidance algorithm
+## 🎯Choice of collision avoidance algorithm
 
 The default collision avoidance algorithm used in our scheme is RVO (reciprocal velocity obstacle). 
 
