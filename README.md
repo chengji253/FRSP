@@ -36,7 +36,7 @@ This work contributes a lightweight, effective scheduling planner capable of mee
 </p>
 
 
-## 🛠️ Quick Start
+## 🛠️ Quick start
 
 You need to install gurobi first !
 [Install Gurobi Optimizer](https://support.gurobi.com/hc/en-us/articles/4534161999889-How-do-I-install-Gurobi-Optimizer)
@@ -102,3 +102,18 @@ In function "def run_flow_planner(map_name, num, forest_bool):", you can get the
 <img src="imgs/net.jpg" height=40% width=40% >
 </div>
 
+## Choice of collision avoidance algorithm
+
+The default collision avoidance algorithm used in our scheme is RVO (reciprocal velocity obstacle). 
+
+However, we also provide two other options for collision avoidance: VO (velocity obstacle) and HRVO (hybrid reciprocal velocity obstacle).
+
+You can check the code in file "RVO_module/RVO.py" for more details.
+
+```python
+def RVO_update(self, X, V_des, V_current, ws_model, robot_exist)
+
+def VO_update(self, X, V_des, V_current, ws_model, robot_exist)
+
+def HRVO_update(self, X, V_des, V_current, ws_model, robot_exist)
+```
