@@ -10,7 +10,38 @@ Our experimental results show high computational efficiency, with an average cal
 We further validated the effectiveness of our scheme through real world flight tests involving ten quadrotors.
 This work contributes a lightweight, effective scheduling planner capable of meeting the real-time demands of multi-robot systems in obstacle-rich environments.
 
-<div align=left><img src="imgs/system.jpg" height=40% width=40% ></div>
+<div align=center><img src="imgs/system.jpg" height=40% width=40% ></div>
+
+## Simulations
+### Forest maps
+
+<p align="center">
+  <img src="imgs/f1.gif" width = 30% height = 30%/>
+  <img src="imgs/f5.gif" width = 30% height = 30%/>
+</p>
+
+### Maze maps
+
+<p align="center">
+  <img src="imgs/m1.gif" width = 30% height = 30%/>
+  <img src="imgs/m2.gif" width = 30% height = 30%/>
+</p>
 
 
-## 🛠️ Installation
+## Real world flight test
+
+<p align="center">
+  <img src="imgs/real55.gif" width = 60% height = 50%/>
+  <img src="imgs/real334.gif" width = 60% height = 50%/>
+</p>
+
+
+## 🛠️ Quick Start
+
+* [Install Gurobi Optimizer](https://support.gurobi.com/hc/en-us/articles/4534161999889-How-do-I-install-Gurobi-Optimizer)
+
+how to choose maps
+
+how to choose number of drones
+
+
