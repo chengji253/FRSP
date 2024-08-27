@@ -39,7 +39,7 @@ This work contributes a lightweight, effective scheduling planner capable of mee
 ## 🛠️ Quick Start
 
 You need to install gurobi first !
-[Install Gurobi Optimizer]((https://support.gurobi.com/hc/en-us/articles/4534161999889-How-do-I-install-Gurobi-Optimizer))
+[Install Gurobi Optimizer](https://support.gurobi.com/hc/en-us/articles/4534161999889-How-do-I-install-Gurobi-Optimizer)
 
 Then, run the script directly.
 ```bash
