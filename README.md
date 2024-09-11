@@ -2,6 +2,9 @@
 <h2>🌊 Flow Inspired Multi-Robot Real-Time Scheduling Planner</h2>
 </div>
 
+
+paper: http://arxiv.org/abs/2409.06952
+
 ## 📜 Introduction
 
 ### Abstract
