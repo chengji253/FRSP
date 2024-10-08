@@ -1,5 +1,5 @@
 <div align="center">
-<h2>🌊 Flow Inspired Multi-Robot Real-Time Scheduling Planner</h2>
+<h2>🌊 Flow Inspired Lightweight Multi-Robot Real-Time Scheduling Planner</h2>
 </div>
 
 
